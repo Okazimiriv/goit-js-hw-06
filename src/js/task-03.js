@@ -29,7 +29,7 @@ imagesList.style.listStyleType = 'none';
 
 const elements = images.map(makeImageCard);
 
-//___________________________
+
 
 
 

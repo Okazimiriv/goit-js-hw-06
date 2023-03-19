@@ -1,9 +1,6 @@
 const listItems = document.querySelectorAll('.item');
 console.log('Number of categories: ', listItems.length);
 
-//_______________
-
-
 listItems.forEach(function (number, index) {
   
 const listTitle = listItems[index].querySelector('h2');
