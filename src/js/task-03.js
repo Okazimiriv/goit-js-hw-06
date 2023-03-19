@@ -30,25 +30,6 @@ const elements = images.map(makeImageCard);
 
 //___________________________
 
-// const imagesList = document.querySelector('.gallery');
-// console.log(imagesList);
-
-// const makeImageCard = ({ url, alt }) => {
-//   const itemEl = document.createElement('li');
-
-//   const imageEl = document.createElement('img');
-//   imageEl.src = url;
-//   imageEl.alt = alt;
-
-//   itemEl.appendChild(imageEl);
-
-//   return itemEl;
-// };
-
-// const elements = images.map(makeImageCard);
-// console.log(elements);
-
-// imagesList.append(...elements)
 
 
 
