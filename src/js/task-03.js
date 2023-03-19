@@ -16,11 +16,12 @@ const images = [
 const imagesList = document.querySelector('.gallery');
 imagesList.style.display = 'flex';
 imagesList.style.justifyContent = 'space-between';
+imagesList.style.listStyleType = 'none';
 
  const makeImageCard = ({ url, alt }) => {
  imagesList.insertAdjacentHTML('beforeend', `<li> <img 
       src="${url}" 
-       alt="${alt}" height = 1000>      
+       alt="${alt}" height = 200>      
 </li>`);  
   
   return;
