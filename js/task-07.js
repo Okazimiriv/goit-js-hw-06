@@ -1,15 +1,9 @@
-const refs = {
-  inputFontSize: document.querySelector('#font-size-control'),
-  text: document.querySelector('#text'),
+const fontSizeControl = document.querySelector("#font-size-control");
+const text = document.querySelector("#text");
+
+fontSizeControl.addEventListener("input", textFontSize);
+
+function textFontSize(event) {
+  text.style.fontSize = event.currentTarget.value + "px";
+  console.log(event.currentTarget.value);
 };
-console.log(refs.inputFontSize);
-console.log(refs.text);
-
-refs.inputFontSize.addEventListener('mouseover', changeMouseFontSize);
-
-
-
-// function changeMouseFontSize(event) {
-//   textInput = event.currentTarget.value;
-//   console.log(textInput.length);
-// };
