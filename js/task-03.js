@@ -14,20 +14,20 @@ const images = [
 ];
 
 const imagesList = document.querySelector('.gallery');
+
 imagesList.style.display = 'flex';
 imagesList.style.justifyContent = 'space-between';
 imagesList.style.listStyleType = 'none';
 
- const makeImageCard = ({ url, alt }) => {
- imagesList.insertAdjacentHTML('beforeend', `<li> <img 
+const elements = images.map(({ url, alt }) => `<li> <img 
       src="${url}" 
-       alt="${alt}" height = 200>      
-</li>`);  
-  
-  return;
-};
+       alt="${alt}" height = 200></li>`)
+  .join("");
 
-const elements = images.map(makeImageCard);
+imagesList.insertAdjacentHTML("beforeend", elements);
+
+
+
 
 
 
